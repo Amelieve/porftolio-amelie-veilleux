@@ -34,3 +34,16 @@ Ma créativité dans mes projets et mes talents dans mes domaines forts."
 
 ###  Création maquette à partir du résultat
 ![Project Logo](media/maquette.png)
+
+
+## Question #1
+1. Qu'est-ce que j'ai accompli depuis le dernier bloc?
+Commencement d'une design de mon portfolio avec l'aide de Figma Maker plus choix de mes technologies.
+2. Quelle a été ma principale difficulté et comment je l'ai surmontée?
+Je n'étais pas sure sur quelle direction artistique je voulais aller vers pour mon projet, car j'avais plusieurs idées mais je voulais rester réaliste sur ce que je pouvais faire avec mes compétences en code.
+3. Qu'est-ce que j'ai appris que je ne savais pas avant?
+J'ai appris l'existence de Figma Maker.
+4. Quelle est ma prochaine étape concrète?
+Continuer la préparation de mon portfolio.
+5. Est-ce que j'ai utilisé l'IA? Si oui, pour quoi et qu'est-ce que ça m'a appris?
+J'ai utilisé l'AI pour la création de mon design ce qui m'a donné des idées concrètes.
