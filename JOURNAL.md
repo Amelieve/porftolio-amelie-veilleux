@@ -9,6 +9,7 @@ Des designs visuels pour voir ce que je peux offrir et ma créativité
 Quelque chose de simple avec des couleurs neutres et un pop de couleur bleu. Une typographie simple en sheriff.
 5. Quelle impression je veux que cette personne retienne après avoir visité mon site?
 Ma créativité dans mes projets et mes talents dans mes domaines forts.
+![Project Logo](media/debut.png)
 
 ###  Ajustement du résultat avec Figma Maker 
 1. enlève le carré en haut dans la premiere page met quelque chose d'autre et enleve la bar qui bouge
