@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
     --rose-pale: #FFD7FC;
@@ -14,11 +14,12 @@ body {
 }
 
 .navbar {
-    height:61px;
+    height: 61px;
     border-bottom: 1px solid var(--rose-flash);
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 40px;
 }
 
 .logo,
@@ -47,21 +48,23 @@ body {
 
 .navbar nav a:hover,
 .footer nav a:hover {
-    color:var(--rose-flash);
+    color: var(--rose-flash);
 }
 
+
 footer {
-    height:85px;
+    height: 85px;
     border-top: 1px solid var(--rose-flash);
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 0 40px;
 }
 
 .footer p {
-    font-size:10px;
+    font-size: 10px;
 }
 
 .footer nav a {
-    font-size:10px;
+    font-size: 10px;
 }
