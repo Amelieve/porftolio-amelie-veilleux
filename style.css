@@ -1,7 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600&display=swap');
+
 :root {
     --rose-pale: #FFD7FC;
     --rose-flash: #EB9EE5;
     --couleur-fond: #F4F3EF;
     --noir: #1C1C1A;
     --gris: #4A4A45;
+}
+
+body {
+    background-color: var(--couleur-fond);
+    font-family: 'Montserrat';
+}
+
+.navbar {
+    height:61px;
+    border-bottom: 1px solid var(--rose-flash);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo,
+.footer-logo {
+    color: var(--noir);
+    font-family: 'DM Serif Display';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar nav a,
+.footer nav a {
+    color: var(--gris);
+    text-decoration: none;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:1.5px;
+}
+
+.navbar nav,
+.footer nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar nav a:hover,
+.footer nav a:hover {
+    color:var(--rose-flash);
+}
+
+footer {
+    height:85px;
+    border-top: 1px solid var(--rose-flash);
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size:10px;
+}
+
+.footer nav a {
+    font-size:10px;
 }
