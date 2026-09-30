@@ -163,3 +163,87 @@
     padding: 7px 14px;
     font-size: 0.7rem;
 }
+
+@media (max-width: 900px) {
+
+    .projects-page {
+        padding: 45px 15px 60px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .project-card {
+        border-radius: 3px;
+    }
+
+    .project-visual {
+        height: auto;
+        border-radius:0;
+    }
+
+    .project-visual--space .project-year,
+    .project-visual--pink .project-year,
+    .project-visual--forest .project-year {
+        top: 10px;
+        right: 10px;
+        min-width: auto;
+        height: auto;
+        padding: 5px 10px;
+        font-size: 1 rem;
+    }
+
+    .project-content {
+        padding: 18px 15px 20px;
+    }
+
+    .project-tags {
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .project-tags span {
+        min-height: auto;
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .project-card h1 {
+        font-size: 2rem;
+        letter-spacing:0;
+        line-height: 1.1;
+    }
+
+    .project-card h2 {
+        font-size: 1.5rem;
+        letter-spacing:0;
+    }
+
+    .project-description {
+        margin: 10px 0 15px;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .project-description {
+        margin: 7px 0 15px;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .project-image {
+        height: 100%;
+        border-radius: 5%;
+    }
+
+    .project-link {
+        gap: 5px;
+        font-size: 0.5rem;
+    }
+
+    .project-link span {
+        font-size: 0.7rem;
+    }
+}

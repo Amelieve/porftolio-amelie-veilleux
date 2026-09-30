@@ -10,7 +10,12 @@
 <body>
     <header class="navbar">
         <a href="index.html" class="logo">A.Veilleux</a>
-        <nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="site-navigation">
             <a href="index.html">ACCUEIL</a>
             <a href="projet_page.html">PROJETS</a>
             <a href="apropos.html">À PROPOS</a>
@@ -61,7 +66,7 @@
 
             <article class="project-card project-card--featured" aria-label="Projet phare">
                 <div class="project-visual project-visual--space">
-                    <img src="assets/media/village_galectique.png" alt="Mysto - projet stop motion" class="project-image">
+                    <img src="assets/media/affiche_sport.png" alt="Mysto - projet stop motion" class="project-image">
                     <span class="project-year">2026</span>
                 </div>
 
@@ -80,7 +85,7 @@
 
             <article class="project-card project-card--featured" aria-label="Projet phare">
                 <div class="project-visual project-visual--space">
-                    <img src="assets/media/village_galectique.png" alt="Mysto - projet stop motion" class="project-image">
+                    <img src="assets/media/affiche_local.jpg" alt="Mysto - projet stop motion" class="project-image">
                     <span class="project-year">2026</span>
                 </div>
 
@@ -109,5 +114,6 @@
             <a href="contact.html">CONTACT</a>
         </nav>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>
