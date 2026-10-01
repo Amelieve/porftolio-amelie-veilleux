@@ -11,7 +11,8 @@
         "category": ["Vidéo", "Stop motion"],
         "year": 2025,
         "description": "Projet stop motion dans un style cartoon.",
-        "image": "assets/media/mysto.png"
+        "image": "assets/media/mysto.png",
+        "bouton": "01_projet.html"
     },
         {
         "title": "Affiche de sport",

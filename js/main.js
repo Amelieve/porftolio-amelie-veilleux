@@ -34,7 +34,7 @@ function createProjectCard(project) {
                     ${project.description}
                 </p>
 
-                <a href="#" class="project-link">
+                <a href="${project.bouton}" class="project-link">
                     Voir le projet <span>→</span>
                 </a>
 
