@@ -14,7 +14,7 @@ body {
 }
 
 .navbar {
-    height: 61px;
+    height: 81px;
     border-bottom: 1px solid var(--rose-flash);
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ body {
 .footer-logo {
     color: var(--noir);
     font-family: 'DM Serif Display';
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
 }
 
@@ -34,7 +34,7 @@ body {
 .footer nav a {
     color: var(--gris);
     text-decoration: none;
-    font-size:11px;
+    font-size:21px;
     font-weight:600;
     letter-spacing:1.5px;
 }
@@ -79,11 +79,11 @@ footer {
 }
 
 .footer p {
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .footer nav a {
-    font-size: 10px;
+    font-size: 17px;
 }
 
 .hero {
@@ -99,7 +99,7 @@ footer {
 
 .titre01 {
     color: var(--rose-pale);
-    font-size: 10px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom:27px;
@@ -107,7 +107,7 @@ footer {
 
 h1 {
     font-family: 'DM Serif Display';
-    font-size: 64px;
+    font-size: 84px;
     font-weight: 400;
     letter-spacing: -2px;
 }
@@ -119,7 +119,8 @@ h1 span {
 
 .intro {
     color: var(--noir);
-    font-size:16px;
+    font-size:30px;
+    padding-bottom: 30px;
 }
 
 .intro-contact {
@@ -133,14 +134,14 @@ h1 span {
 }
 
 .btn {
-    height:44px;
+    height:64px;
     padding:0 24px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
     text-decoration: none;
-    font-size:11px;
+    font-size:21px;
     font-weight: 600;
 }
 
@@ -160,53 +161,58 @@ span {
 }
 
 .about-page {
-    min-height: calc(100vh - 61px - 85px);
-    padding: 20px 20px;
+    min-height: calc(100vh - 81px - 85px);
+    padding: 65px 20px 40px;
 }
 
 .about-grid {
-   max-width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 48px;
 }
 
 .about-left {
-    padding-top: 5px;
+    padding-top: 0;
 }
 
 .about-left h1 {
   font-family: "DM Serif Display";
-  font-size:50px;
+    font-size:64px;
   font-weight:400;
   color:var(--noir);
   margin: 0 0 20px;
 }
 
-.about-text {
-    max-width: 470px;
+.about-left .intro-contact,
+.about-description {
+    max-width: 520px;
+    color: var(--noir);
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 0 0 18px;
 }
 
-.about-text p{
-   color: var(--noir);
-   font-size: 11px;
-   margin:0 0 14px;
+.about-left .intro-contact span {
+    color: var(--noir);
+    font-weight: 700;
 }
 
-.about-info {
-   margin-top:82px;
-   padding-top:25px;
-   display:grid;
-   grid-template-columns: 1fr 1fr;
-   column-gap: 40px;
-   row-gap: 15px;
+.contact {
+    margin-top: 72px;
+    padding-top: 28px;
+    border-top: 1px solid #deddd8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 15px;
 }
 
 .info-item span {
     display: block;
     color: var(--rose-flash);
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 600;
     letter-spacing: 1.5px;
     margin-bottom: 7px;
@@ -214,8 +220,9 @@ span {
 
 .info-item p {
     color: var(--noir);
-    font-size: 10px;
+    font-size: 13px;
     margin: 0;
+    line-height: 1.35;
 }
 
 .about-right {
@@ -223,18 +230,46 @@ span {
     flex-direction: column;
 }
 
-.about-photo{
-   height:240px;
-   position:relative;
-   overflow:hidden;
+.about-photo {
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #d9daf4 0 30%, #d0d8f4 30% 100%);
+}
+
+.about-photo > span {
+    color: rgba(235, 158, 229, 0.16);
+    font-family: 'DM Serif Display';
+    font-size: 78px;
+}
+
+.about-photo small {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: var(--rose-flash);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
 
 .skills-section {
-    margin-top:25px;
+    margin-top: 25px;
+}
+
+.section-label {
+    color: var(--rose-flash);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin: 0 0 15px;
 }
 
 .skill {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 .skill-header {
@@ -242,13 +277,17 @@ span {
     justify-content: space-between;
     align-items: center;
     color:var(--gris);
-    font-size: 10px;
-    margin-bottom: 6px;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.skill-header span {
+    color: var(--gris);
 }
 
 .skill-bar {
     width: 100%;
-    height: 2px;
+    height: 3px;
     background: var(--gris);
 }
 
@@ -258,23 +297,32 @@ span {
 }
 
 .competences {
-    margin-top: 18px;
+    margin-top: 30px;
 }
 
 .competence-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
+    gap: 9px;
 }
 
 .competence-list span {
-    background:var(--gris);
-   border-radius: 20px;
-   padding:5px 9px;
-   color: var(--gris);
-   font-size: 6px;
-   font-weight: 600;
-   letter-spacing: 1.5px;
+    background: #ebe9e4;
+    border-radius: 20px;
+    padding: 7px 11px;
+    color: var(--gris);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+#projects-title {
+    color: var(--noir);
+    font-family: 'DM Serif Display';
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 
@@ -292,7 +340,7 @@ span {
     }
 
     .logo {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .menu-toggle {
@@ -458,14 +506,13 @@ span {
         order:2;
     }
 
-    .about-image {
-        display:block;
-        width:100%;
-        height: auto;
+    .about-photo {
+        width: 100%;
+        height: 240px;
     }
 
     .about-left .contact {
-        margin-top:30px;
+        margin-top: 30px;
         font-size: 16px;
         line-height: 1.5;
     }
@@ -531,7 +578,7 @@ span {
     }
 
     .footer .logo {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .footer p {

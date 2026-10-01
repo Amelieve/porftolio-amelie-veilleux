@@ -23,7 +23,7 @@ if (menuToggle && siteNavigation) {
     });
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 900) {
+        if (window.innerWidth > 700) {
             closeMenu();
         }
     });

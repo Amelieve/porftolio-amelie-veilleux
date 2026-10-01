@@ -1,28 +1,28 @@
 [
     {
         "title": "Village Galactique",
-        "category": "Modélisation 3D",
+        "category": ["Modélisation 3D", "Création"],
         "year": 2025,
         "description": "Modélisation d'un environnement spatial.",
-        "image": "assets/media/village_galactique.png"
+        "image": "assets/media/village_galectique.png"
     },
     {
         "title": "Mysto",
-        "category": "Vidéo",
+        "category": ["Vidéo", "Stop motion"],
         "year": 2025,
         "description": "Projet stop motion dans un style cartoon.",
         "image": "assets/media/mysto.png"
     },
         {
         "title": "Affiche de sport",
-        "category": "Design",
+        "category": ["Design", "Affiche"],
         "year": 2026,
         "description": "Affiche réalisé pour un jouer de hockey.",
         "image": "assets/media/affiche_sport.png"
     },
         {
         "title": "Affiche pour un évènement local ",
-        "category": "Design",
+        "category": ["Design", "Affiche"],
         "year": 2026,
         "description": "Affiche réalisé pour évènement local en plusieurs formats.",
         "image": "assets/media/affiche_local.jpg"
