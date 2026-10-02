@@ -47,3 +47,21 @@ J'ai appris l'existence de Figma Maker.
 Continuer la préparation de mon portfolio.
 5. Est-ce que j'ai utilisé l'IA? Si oui, pour quoi et qu'est-ce que ça m'a appris?
 J'ai utilisé l'AI pour la création de mon design ce qui m'a donné des idées concrètes.
+
+###  Création menu burger
+- **Date :** 2026-09-28
+- **Prompt :** est ce que tu peux rendre mon header en media query fonctionnable en fonction burger
+- **Outil :** Copilot Github
+- **Résultat :** Voici le résultat
+
+###  Problème menu burger
+- **Date :** 2026-09-30
+- **Prompt :** pourquoi est ce que mon menu burger ne fonctionne pu dans mon meedia querry
+- **Outil :** Copilot Github
+- **Résultat :** Voici le résultat
+
+###  Problème JSON
+- **Date :** 2026-10-01
+- **Prompt :** pourquoi la connection de mon image_creation01 ne fonctionne pas
+- **Outil :** Copilot Github
+- **Résultat :** Voici le résultat
