@@ -1,19 +1,22 @@
+/* Importe les polices Google */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700&display=swap');
-
+/* Définit les variables CSS pour les couleurs */
 :root {
     --rose-pale: #e0b9de;
     --rose-flash: #EB9EE5;
     --couleur-fond: #F4F3EF;
     --noir: #1C1C1A;
     --gris: #4A4A45;
+    --visual: #ddd2ca;
 }
+/* Structure générale du site */
 
 html, body {
     width: 100vw;
     max-width: 100%;
     overflow-x: hidden;
 }
-
+/* Définit le style général du body comme le font et la couleur de fond*/
 body {
     background-color: var(--couleur-fond);
     font-family: 'Montserrat';
@@ -22,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/* Permet au contenu de s'adapter à la hauteur de la page */
 main,
 .about-page,
 .projects-page,
@@ -30,7 +33,9 @@ main,
     flex: 1;
 }
 
+/* Strucute pour grand écran*/
 @media (min-width: 1024px) {
+    /* La page d'accueil occupe toute la hauteur de la fenêtre */
     body.home-page {
         height: 100vh;
         overflow-y: hidden;
@@ -52,20 +57,20 @@ main,
         max-height: calc(100vh - 81px - 85px);
         box-sizing: border-box;
     }
-
+/*  Structure pour pages de projet */
     .project-page-body {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
     }
 }
-
+/* Structure généralepour les pages de projet  */
 .project-page-body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
+/* barre de navigation */
 .navbar {
     height: 81px;
     border-bottom: 1px solid var(--rose-flash);
@@ -74,7 +79,7 @@ main,
     justify-content: space-between;
     padding: 0 40px;
 }
-
+/*  Style du logo pour le header et le footer*/
 .logo,
 .footer-logo {
     color: var(--noir);
@@ -82,7 +87,7 @@ main,
     font-size: 30px;
     text-decoration: none;
 }
-
+/* Style des liens de navigation */
 .navbar nav a,
 .footer nav a {
     color: var(--gris);
@@ -91,14 +96,14 @@ main,
     font-weight:600;
     letter-spacing:1.5px;
 }
-
+/* Organisation des liens de navigation */
 .navbar nav,
 .footer nav {
     display: flex;
     align-items: center;
     gap: 32px;
 }
-
+/* Bouton burger caché sur desktop*/
 .menu-toggle {
     display: none;
     border: 0;
@@ -106,7 +111,7 @@ main,
     background: transparent;
     cursor: pointer;
 }
-
+/* Création du menu burger */
 .menu-toggle span {
     display: block;
     width: 24px;
@@ -115,13 +120,13 @@ main,
     background: var(--noir);
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
-
+/* Change la couleur des liens quand on les survole */
 .navbar nav a:hover,
 .footer nav a:hover {
     color: var(--rose-flash);
 }
 
-
+/* Pied de page */
 footer {
     height: 85px;
     border-top: 1px solid var(--rose-flash);
@@ -138,20 +143,21 @@ footer {
 .footer nav a {
     font-size: 17px;
 }
-
+/* Style pour le détail du projet */
 .project-detail {
     flex: 1;
     max-width: 1180px;
     width: min(1180px, calc(100% - 120px));
     margin: 0 auto;
     padding: 52px 0 28px;
+    height: auto;
 }
-
+/* Header du projet */
 .project-header {
     max-width: 760px;
     margin-bottom: 32px;
 }
-
+/* Mini titre */
 .eyebrow {
     margin: 0 0 16px;
     color: var(--rose-flash);
@@ -159,7 +165,7 @@ footer {
     font-weight: 600;
     letter-spacing: 2px;
 }
-
+/* Style du titre principal */
 .project-header h1 {
     margin: 0;
     font-family: 'DM Serif Display';
@@ -182,98 +188,136 @@ footer {
     position: relative;
     margin: 0;
     width: min(100%, 920px);
-    height: 480px;
-    border-radius: 0;
-    background: linear-gradient(180deg, #0a0e25 0%, #0d0d1f 100%);
-    overflow: hidden;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+    height: auto;
+    border-radius: 18px;
+    background: transparent;
+    overflow: visible;
+    box-shadow: none;
 }
 
-.project-visual::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at center, rgba(153, 114, 255, 0.1) 0%, rgba(0,0,0,0) 42%);
-}
-
-.project-screen {
-    position: absolute;
-    left: 50%;
-    bottom: 55px;
-    transform: translateX(-50%);
-    width: 330px;
-    height: 210px;
-    background: linear-gradient(180deg, rgba(58, 112, 255, 0.18), rgba(17, 36, 86, 0.8));
-    border: 7px solid #0d0d0f;
-    box-shadow: 0 0 0 3px rgba(194, 156, 255, 0.23), 0 14px 24px rgba(0, 0, 0, 0.25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.project-screen::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0));
-}
-
-.screen-text {
-    position: relative;
-    z-index: 1;
+.project-image {
     display: block;
-    color: rgba(255,255,255,0.78);
-    font-size: 52px;
+    width: 100%;
+    height: auto;
+    object-fit: initial;
+    object-position: center;
+}
+/* Style pour les informations du projet */
+.project-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: min(100%, 920px);
+    margin-top: 24px;
+    padding: 24px 0;
+    /* Lignes de séparation */
+    border-top: 1px solid rgba(235, 158, 229, 0.7);
+    border-bottom: 1px solid rgba(235, 158, 229, 0.7);
+}
+/* Titres des éléments d'information */
+.project-info-item h2 {
+    margin: 0 0 8px;
+    color: var(--rose-flash);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* Texte des éléments d'information */
+.project-info-item p {
+    margin: 0;
+    color: var(--noir);
+    font-size: 15px;
+    line-height: 1.6;
+}
+/* Démarche créative  du projet*/
+.project-story {
+    margin-top: 110px;
+    padding: 72px 0 90px;
+    border-top: 1px solid rgba(235, 158, 229, 0.7);
+}
+
+.project-story-header {
+    max-width: 620px;
+    margin-bottom: 46px;
+}
+
+.project-story-header h2 {
+    margin: 0;
+    color: var(--noir);
+    font-family: 'DM Serif Display';
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 0.95;
+}
+
+.project-story-header > p:last-child {
+    max-width: 500px;
+    margin: 22px 0 0;
+    color: var(--gris);
+    font-size: 15px;
+    line-height: 1.7;
+}
+/* Affiche les trois étapes sur trois colonnes*/
+.project-story-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.project-story-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+/* Contenur des images */
+.project-story-item figure {
+    height: auto;
+    margin: 0 0 24px;
+    overflow: visible;
+    background: transparent;
+}
+/* Image de la démarche créative */
+.project-story-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: initial;
+}
+
+.story-number {
+    margin: 0 0 12px;
+    color: var(--rose-flash);
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    text-shadow: 0 0 10px rgba(166, 248, 255, 0.9), 0 0 18px rgba(188, 162, 255, 0.9);
-    transform: rotate(-2deg);
-    white-space: nowrap;
+    letter-spacing: 2px;
 }
 
-.project-screen::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0) 35%, rgba(255,255,255,0.05));
+.project-story-item h3 {
+    margin: 0 0 12px;
+    color: var(--noir);
+    font-family: 'DM Serif Display';
+    font-size: 2rem;
+    font-weight: 400;
 }
 
-.project-stand {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 48px;
-    height: 220px;
-    background: linear-gradient(180deg, rgba(20,20,20,0.9), rgba(10,10,10,0.98));
-    clip-path: polygon(30% 0, 70% 0, 100% 100%, 0 100%);
-    filter: drop-shadow(0 0 10px rgba(153, 118, 255, 0.2));
-}
-
-.project-stand::before {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 18px;
-    background: rgba(14, 14, 18, 0.9);
-    bottom: -16px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(121, 94, 255, 0.2);
+.project-story-item div > p:last-child {
+    margin: 0;
+    color: var(--gris);
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .footer {
     margin-top: auto;
 }
 
-
+/* Page d'accueil */
 main {
     width: 100vw;
     height: calc(100vh - 81px - 85px);
 }
-
+/* Section principale de la page d'accueil */
 .hero {
     width: 100vw;
     height: 100%;
@@ -301,7 +345,7 @@ h1 {
     font-weight: 400;
     letter-spacing: -2px;
 }
-
+/* Permet que certains mots du titre soient soulignés et rose*/
 h1 span {
     color: var(--rose-pale);
     text-decoration: underline;
@@ -317,12 +361,12 @@ h1 span {
     color: var(--noir);
     font-size:26px;
 }
-
+/* Organisation des boutons */
 .buttons {
     display: flex;
     gap:16px;
 }
-
+/* Style général des boutons */
 .btn {
     height:64px;
     padding:0 24px;
@@ -349,12 +393,12 @@ h1 span {
 span {
     color: var(--rose-pale);
 }
-
+/* Page à propos */
 .about-page {
     min-height: calc(100vh - 81px - 85px);
     padding: 65px 20px 40px;
 }
-
+/* Organisation en deux colonnes */
 .about-grid {
     max-width: 1180px;
     margin: 0 auto;
@@ -362,7 +406,7 @@ span {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 48px;
 }
-
+/* Colonne de gauche */
 .about-left {
     padding-top: 0;
 }
@@ -414,12 +458,12 @@ span {
     margin: 0;
     line-height: 1.35;
 }
-
+/* Colonne de droite */
 .about-right {
     display: flex;
     flex-direction: column;
 }
-
+/* Zone pour la photo*/
 .about-photo {
     height: 290px;
     position: relative;
@@ -445,7 +489,7 @@ span {
     font-weight: 600;
     letter-spacing: 1.5px;
 }
-
+/* Compétences*/
 .skills-section {
     margin-top: 25px;
 }
@@ -474,13 +518,13 @@ span {
 .skill-header span {
     color: var(--gris);
 }
-
+/* Barre de progression */
 .skill-bar {
     width: 100%;
     height: 3px;
     background: var(--gris);
 }
-
+/* Partie remplie de la barre de progression */
 .skill-progress {
     height: 100%;
     background: var(--rose-flash);
@@ -505,6 +549,8 @@ span {
     font-weight: 600;
     letter-spacing: 1.5px;
 }
+
+/* Page projets*/
 #projects-title {
     color: var(--noir);
     font-family: 'DM Serif Display';
@@ -515,14 +561,14 @@ span {
     text-align: center;
 }
 
-
+/* Version mobile */
 @media (max-width: 900px) {
-
+/* Ajustements pour la version mobile */
     body {
         margin: 0;
         background-color: var(--couleur-fond);
     }
-
+/* Navigation mobile*/
     .navbar {
         height: 60px;
         padding: 0 15px;
@@ -532,7 +578,7 @@ span {
     .logo {
         font-size: 20px;
     }
-
+/*Affiche le bouton burger */
     .menu-toggle {
         display: block;
         z-index: 2;
@@ -541,7 +587,7 @@ span {
     .navbar {
         position: relative;
     }
-
+/* Navigation caché sur mobile*/
     .navbar nav {
         display: none;
         position: absolute;
@@ -556,7 +602,7 @@ span {
         background: var(--couleur-fond);
         border-bottom: 1px solid var(--rose-flash);
     }
-
+/* Affiche le menu lorsqu'il est ouvert */
     .navbar nav.is-open {
         display: flex;
     }
@@ -564,7 +610,7 @@ span {
     .navbar nav a {
         padding: 12px 0;
     }
-
+/* Le menu burger devient un x*/
     .menu-toggle.is-open span:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
     }
@@ -576,7 +622,7 @@ span {
     .menu-toggle.is-open span:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
     }
-
+/* Page projet*/
     .projects-page {
         padding: 45px 15px 60px;
     }
@@ -593,7 +639,7 @@ span {
         letter-spacing: -1px;
         margin: 0 0 20px;
     }
-
+/* page d'accueil mobile*/
     .hero {
         min-height: calc(100vh - 60px - 120px);
         padding: 0 15px;
@@ -625,7 +671,7 @@ span {
         line-height: 1.6;
         margin-bottom: 25px;
     }
-
+/* Place les boutons l'un sous l'autre*/
     .buttons {
         display: flex;
         flex-direction: column;
@@ -656,12 +702,12 @@ span {
         font-weight: 600;
         letter-spacing: 1.5px;
     }
-
+/* Page à propos */
     .about-page {
        min-height:auto;
        padding:40px 15px 50px;
     }
-
+/* Une colonne*/
     .about-grid {
         width:100%;
         max-width: none;
@@ -755,7 +801,7 @@ span {
         font-weight: 600;
         letter-spacing: 1px;
     }
-
+/* Footer version mobile */
     footer {
         height: auto;
         min-height: 140px;
@@ -786,7 +832,7 @@ span {
         font-size: 10px;
         letter-spacing: 1px;
     }
-
+/* Projet */
       .project-detail {
         width: min(100%, calc(100% - 32px));
         padding-top: 36px;
@@ -807,21 +853,29 @@ span {
     }
 
     .project-visual {
-        height: 300px;
+        height: auto;
     }
 
-    .project-screen {
-        width: 210px;
-        height: 140px;
-        bottom: 38px;
+    .project-story {
+        margin-top: 70px;
+        padding: 48px 0 56px;
     }
 
-    .screen-text {
-        font-size: 30px;
+    .project-story-header {
+        margin-bottom: 32px;
     }
 
-    .project-stand {
-        width: 36px;
-        height: 160px;
+    .project-story-header h2 {
+        font-size: 2.8rem;
+    }
+/* Une colonne */
+    .project-story-grid {
+        grid-template-columns: 1fr;
+        gap: 44px;
+    }
+
+    .project-story-item figure {
+        height: auto;
+        margin-bottom: 18px;
     }
 }

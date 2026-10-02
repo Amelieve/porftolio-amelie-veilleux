@@ -1,31 +1,69 @@
 [
     {
         "title": "Village Galactique",
+        "name":"Village Galactique",
         "category": ["Modélisation 3D", "Création"],
         "year": 2025,
         "description": "Modélisation d'un environnement spatial.",
-        "image": "assets/media/village_galectique.png"
+        "image": "assets/media/village_galectique.png",
+        "bouton": "01_projet.html",
+        "software": ["Maya", "Unity"],
+        "projectType": "Projet scolaire"
     },
     {
         "title": "Mysto",
+        "title02": "DÉMARCHE CRÉATIVE",
+        "title03": "Une exploration visuelle en trois étapes, de l'idée de départ au résultat final.",
+        "title04": "Image de la démarche créative de",
+        "name": "Mysto",
         "category": ["Vidéo", "Stop motion"],
         "year": 2025,
         "description": "Projet stop motion dans un style cartoon.",
+         "intro": "Notre projet combine de la musique entraînante, des scènes énergiques et des lumières colorées pour rendre hommage aux génériques rétro avec lesquels nous avons grandi.",
         "image": "assets/media/mysto.png",
-        "bouton": "01_projet.html"
+        "software": ["Dragon Frame", "DaVinci Resolve"],
+        "projectType": "Projet scolaire",
+        "etape01": "L'idée de départ",
+        "etape02": "Deuxième moodboard",
+        "etape03": "En tournage",
+        "image_creation01": "assets/media/01_moodboard.png",
+        "image_creation02": "assets/media/02_moodboard.png",
+        "image_creation03": "assets/media/tournage.jpg",
+        "description01": "Nous avons commencé par créer un moodboard pour définir l'ambiance et le style visuel de notre projet. Nous avons rassemblé des images, des couleurs et des textures qui nous inspiraient.",
+        "description02": ": Avec les commentaires de la professeure, nous avons apporté des changements à notre pré production. Nous avons principalement changé le lieu mais nous gardons toujours le principe d’une histoire. ",
+        "description03": "En tournant, nous avons fait des tests avec les lumières et nous avons décidé d’aller vers un style plus coloré surtout avec les costumes. Nous avons aussi décidé d’aller vers un style plus d’une introduction d’un dessin animé. "
     },
         {
         "title": "Affiche de sport",
+        "name": "Affiche de sport",
         "category": ["Design", "Affiche"],
         "year": 2026,
         "description": "Affiche réalisé pour un jouer de hockey.",
-        "image": "assets/media/affiche_sport.png"
+        "image": "assets/media/affiche_sport.png",
+        "software": ["Figma"],
+        "projectType": "Projet personnel"
     },
         {
         "title": "Affiche pour un évènement local ",
+        "name": "Affiche pour un évènement local",
         "category": ["Design", "Affiche"],
         "year": 2026,
         "description": "Affiche réalisé pour évènement local en plusieurs formats.",
-        "image": "assets/media/affiche_local.jpg"
+        "image": "assets/media/affiche_local.jpg",
+        "software": ["Figma"],
+        "projectType": "Projet personnel",
+        "title02": "AUTRES FORMATS",
+        "title03": "Mise en page de l'affiche pour différents formats d'affichage.",
+        "title04": "Autres formats pour",
+        "etape01": "Version téléphone",
+        "etape02": "Version instagram",
+        "etape03": "Version Le Devoir",
+        "intro": "Réaliser une publicité pour un évènement local. Elle doit être adaptée à plusieurs formats d’affichage..",
+        "image_creation01": "assets/media/affiche_telephone.png",
+        "image_creation02": "assets/media/affiche_insta.png",
+        "image_creation03": "assets/media/affiche_devoir.png",
+        "description01": "Version téléphone.",
+        "description02": "Version instagram ",
+        "description03": "Version Le Devoir "
     }
 ]

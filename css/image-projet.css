@@ -1,7 +1,8 @@
+/* Espace autour des projets */
 .projects-page {
     padding: 32px 26px 40px;
 }
-
+/* Organise en deux colonnes */
 .projects-grid {
     max-width: 1180px;
     margin: 0 auto;
@@ -10,7 +11,7 @@
     justify-content: center;
     gap: 28px;
 }
-
+/* Style pour chaque carte de projet */
 .project-card {
     width: 100%;
     background: #f5f2ee;
@@ -28,10 +29,10 @@
     height: 520px;
     overflow: hidden;
     border-radius: 28px 28px 0 0;
-    background-color: #ddd2ca;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25);
+    background-color:var(--visual);
+    
 }
-
+/* Image du projet */
 .project-image {
     display: block;
     width: 100%;
@@ -41,14 +42,7 @@
     object-position: center;
 }
 
-.project-visual::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.05));
-    pointer-events: none;
-}
-
+/* Emplacement de l'année du projet */
 .project-visual--space .project-year,
 .project-visual--pink .project-year,
 .project-visual--forest .project-year {
@@ -69,7 +63,7 @@
     letter-spacing: 0.04em;
     z-index: 2;
 }
-
+/* Contenu */
 .project-content {
     padding: 26px 26px 28px;
 }
@@ -95,7 +89,7 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
-
+/* Titre + description */
 .project-card h1,
 .project-card h2 {
     margin: 0;
@@ -121,7 +115,7 @@
     line-height: 1.2;
     color: var(--gris-fonce);
 }
-
+/* Lien pour voir le projet */
 .project-link {
     display: inline-flex;
     align-items: center;
@@ -166,13 +160,13 @@
     padding: 7px 14px;
     font-size: 0.7rem;
 }
-
+/* Version mobile */
 @media (max-width: 900px) {
 
     .projects-page {
         padding: 45px 15px 60px;
     }
-
+/* Une colonne */
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 15px;

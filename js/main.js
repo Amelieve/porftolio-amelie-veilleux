@@ -1,11 +1,14 @@
+// Charge les projets depuis le fichier JSON
 async function loadProjects() {
     const response = await fetch('./data/projets.json');
     const projects = await response.json();
     return projects;
 }
-
+// Crée les différentes sections de la page du projet
 function createProjectCard(project) {
+    // Gé
     return `
+
         <article class="project-card project-card--featured">
 
             <div class="project-visual project-visual--space">
@@ -34,7 +37,10 @@ function createProjectCard(project) {
                     ${project.description}
                 </p>
 
-                <a href="${project.bouton}" class="project-link">
+                <a
+                    href="01_projet.html?project=${encodeURIComponent(project.name || project.title)}"
+                    class="project-link"
+                >
                     Voir le projet <span>→</span>
                 </a>
 
@@ -43,17 +49,16 @@ function createProjectCard(project) {
         </article>
     `;
 }
-
+// Fonction qui initalise la page du projet
 async function init() {
-
+// Cherche l'élément HTML dans lequel le contenu du projet sera affiché
     const grid = document.querySelector('.projects-grid');
-
+// Récupère tous les projets du fichier JSON
     const projects = await loadProjects();
 
     grid.innerHTML = projects
         .map(project => createProjectCard(project))
         .join('');
 }
-
+// Lance le programme
 init();
-
