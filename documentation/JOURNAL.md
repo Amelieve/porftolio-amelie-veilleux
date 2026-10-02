@@ -3,7 +3,7 @@
 - **Prompt :** "
 Avec mon personna et mon moodboard portfolio fait moi en : 1.	Quel type de poste ou de stage je vise en sortant du programme?
 Un poste dans la publicité. 
-![Project Logo](media/moodboard.png)
+![Project Logo](../assets/media/moodboard.png)
 2. Qui va probablement regarder mon portfolio? (un·e recruteur·e d'agence, une petite entreprise, un·e client·e potentiel·le...)
 Un recruteur d’agence de publicité 
 3. Qu'est-ce que cette personne cherche à voir en premier?
@@ -14,7 +14,7 @@ Quelque chose de simple avec des couleurs neutres et un pop de couleur bleu. Une
 Ma créativité dans mes projets et mes talents dans mes domaines forts."
 - **Outil :** Figma Make
 - **Résultat :** Voici le résultat
-![Project Logo](media/debut.png)
+![Project Logo](../assets/media/debut.png)
 
 ###  Ajustement du résultat avec Figma Maker 
 - **Date :** 2026-09-02
@@ -25,15 +25,15 @@ Ma créativité dans mes projets et mes talents dans mes domaines forts."
 4. est ce que tu peux rendre la section contact plus simple et enlever le form"
 - **Outil :** Figma Make
 - **Résultat :** Voici le résultat
-![Project Logo](media/figma.png)
+![Project Logo](../assets/media/figma.png)
 
 ###  Ajustement du résultat de Figma Maker par moi-même
 1. Changement de la couleur pour du rose
 2. Modification du nombre de projets
-![Project Logo](media/changement_personnel.png)
+![Project Logo](../assets/media/changement_personnel.png)
 
 ###  Création maquette à partir du résultat
-![Project Logo](media/maquette.png)
+![Project Logo](../assets/media/maquette.png)
 
 
 ## Question #1
@@ -48,20 +48,35 @@ Continuer la préparation de mon portfolio.
 5. Est-ce que j'ai utilisé l'IA? Si oui, pour quoi et qu'est-ce que ça m'a appris?
 J'ai utilisé l'AI pour la création de mon design ce qui m'a donné des idées concrètes.
 
+
 ###  Création menu burger
 - **Date :** 2026-09-28
 - **Prompt :** est ce que tu peux rendre mon header en media query fonctionnable en fonction burger
 - **Outil :** Copilot Github
 - **Résultat :** Voici le résultat
-
+![Project Logo](../assets/media/resultat_burger.png)
 ###  Problème menu burger
 - **Date :** 2026-09-30
 - **Prompt :** pourquoi est ce que mon menu burger ne fonctionne pu dans mon meedia querry
 - **Outil :** Copilot Github
 - **Résultat :** Voici le résultat
-
+![Project Logo](../assets/media/resultat_burger.png)
 ###  Problème JSON
 - **Date :** 2026-10-01
 - **Prompt :** pourquoi la connection de mon image_creation01 ne fonctionne pas
 - **Outil :** Copilot Github
 - **Résultat :** Voici le résultat
+![Project Logo](../assets/media/reponse_copilot.png)
+
+
+## Question #2
+1. Qu'est-ce que j'ai accompli depuis le dernier bloc?
+Fin du HTML + CSS. Intégration du JS. Plus, adaptation mobile
+2. Quelle a été ma principale difficulté et comment je l'ai surmontée?
+Je crois que la compréhension de JSON était le plus compliqué mais une fois compris, cela est facile.
+3. Qu'est-ce que j'ai appris que je ne savais pas avant?
+J'en ai appris plus sur le fonctionnement de JSON
+4. Quelle est ma prochaine étape concrète?
+Faire mes animations
+5. Est-ce que j'ai utilisé l'IA? Si oui, pour quoi et qu'est-ce que ça m'a appris?
+Oui, elle m'a beaucoup aidé à la création de mon menu burger
