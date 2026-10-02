@@ -9,6 +9,12 @@
     --gris: #4A4A45;
     --visual: #ddd2ca;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 /* Structure générale du site */
 
 html, body {
@@ -31,6 +37,17 @@ main,
 .projects-page,
 .project-detail {
     flex: 1;
+}
+
+.about-grid,
+.about-left,
+.about-right,
+.projects-page,
+.projects-grid,
+.project-card,
+.project-content,
+.project-detail {
+    min-width: 0;
 }
 
 /* Strucute pour grand écran*/
@@ -422,6 +439,7 @@ span {
 .about-left .intro-contact,
 .about-description {
     max-width: 520px;
+    overflow-wrap: anywhere;
     color: var(--noir);
     font-size: 15px;
     line-height: 1.65;
@@ -624,7 +642,7 @@ span {
     }
 /* Page projet*/
     .projects-page {
-        padding: 45px 15px 60px;
+        padding: 45px 25px 60px;
     }
 
     .projects-header {
@@ -705,7 +723,7 @@ span {
 /* Page à propos */
     .about-page {
        min-height:auto;
-       padding:40px 15px 50px;
+       padding:40px 25px 50px;
     }
 /* Une colonne*/
     .about-grid {
@@ -732,7 +750,7 @@ span {
     }
 
     .about-left .intro-contact {
-        font-size: 13px;
+        font-size: 20px;
         line-height: 1.6;
         margin:0;
     }
@@ -749,7 +767,7 @@ span {
 
     .about-left .contact {
         margin-top: 30px;
-        font-size: 16px;
+        font-size: 26px;
         line-height: 1.5;
     }
 
