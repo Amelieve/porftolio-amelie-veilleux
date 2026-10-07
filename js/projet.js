@@ -78,6 +78,7 @@ function createProjectStory(project) {
 // Crée la page du projet avec les informations principales
 function createProjectPage(project) {
     return `
+        <a class="project-back-link" href="projet_page.html" aria-label="Retour à la page des projets">← Retour à la page projet</a>
         <section class="project-header" aria-labelledby="project-title">
             <p class="eyebrow">${project.category.join(' • ')}</p>
             <h1 id="project-title">${project.name}</h1>

@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700&display=swap');
 /* Définit les variables CSS pour les couleurs */
 :root {
-    --rose-pale: #e0b9de;
-    --rose-flash: #EB9EE5;
+    --rose-pale: #A72A73;
+    --rose-flash: #BF2B82;
     --couleur-fond: #F4F3EF;
     --noir: #1C1C1A;
     --gris: #4A4A45;
@@ -161,6 +161,24 @@ footer {
     font-size: 17px;
 }
 /* Style pour le détail du projet */
+.project-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 18px;
+    color: var(--rose-flash);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: opacity 0.2s ease;
+}
+
+.project-back-link:hover {
+    opacity: 0.8;
+}
+
 .project-detail {
     flex: 1;
     max-width: 1180px;
@@ -345,7 +363,7 @@ main {
 }
 
 .hero-content {
-    margin-top: -2vh;
+    margin-top: 40px;
 }
 
 .titre01 {
@@ -490,6 +508,14 @@ span {
     align-items: center;
     justify-content: center;
     background: linear-gradient(90deg, #d9daf4 0 30%, #d0d8f4 30% 100%);
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 .about-photo > span {
