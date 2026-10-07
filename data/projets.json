@@ -5,7 +5,7 @@
         "category": ["Modélisation 3D", "Création"],
         "year": 2025,
         "description": "Modélisation d'un environnement spatial.",
-        "image": "assets/media/village_galectique.png",
+        "image": "assets/media/village_gallactique_mod.avif",
         "bouton": "01_projet.html",
         "software": ["Maya", "Unity"],
         "projectType": "Projet scolaire"
@@ -39,7 +39,7 @@
         "category": ["Design", "Affiche"],
         "year": 2026,
         "description": "Affiche réalisé pour un jouer de hockey.",
-        "image": "assets/media/affiche_sport.png",
+        "image": "assets/media/affiche_sport_mod.avif",
         "software": ["Figma"],
         "projectType": "Projet personnel"
     },
@@ -49,7 +49,7 @@
         "category": ["Design", "Affiche"],
         "year": 2026,
         "description": "Affiche réalisé pour évènement local en plusieurs formats.",
-        "image": "assets/media/affiche_local.jpg",
+        "image": "assets/media/affiche_local_mod.avif",
         "software": ["Figma"],
         "projectType": "Projet personnel",
         "title02": "AUTRES FORMATS",
