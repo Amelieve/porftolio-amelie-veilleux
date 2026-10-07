@@ -741,6 +741,13 @@ span {
         line-height: 1.5;
     }
 
+    .hero .contact {
+        margin: 26px 8px 0;
+        padding: 22px 4px 0;
+        grid-template-columns: 1fr;
+        row-gap: 18px;
+    }
+
     .contact span {
         font-size: 12px;
         font-weight: 600;
