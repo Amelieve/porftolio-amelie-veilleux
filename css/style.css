@@ -428,7 +428,7 @@ h1 span::after {
 
 .intro-contact {
     color: var(--noir);
-    font-size:26px;
+    font-size:46px;
 }
 /* Organisation des boutons */
 .buttons {
@@ -493,7 +493,7 @@ span {
     max-width: 520px;
     overflow-wrap: anywhere;
     color: var(--noir);
-    font-size: 15px;
+    font-size: 28px;
     line-height: 1.65;
     margin: 0 0 18px;
 }
@@ -528,7 +528,7 @@ span {
 .info-item span {
     display: block;
     color: var(--rose-flash);
-    font-size: 10px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 1.5px;
     margin-bottom: 7px;
@@ -536,7 +536,7 @@ span {
 
 .info-item p {
     color: var(--noir);
-    font-size: 13px;
+    font-size: 23px;
     margin: 0;
     line-height: 1.35;
 }
@@ -586,7 +586,7 @@ span {
 
 .section-label {
     color: var(--rose-flash);
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 1.5px;
     margin: 0 0 15px;
@@ -601,7 +601,7 @@ span {
     justify-content: space-between;
     align-items: center;
     color:var(--gris);
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 7px;
 }
 
@@ -646,7 +646,7 @@ span {
     border-radius: 20px;
     padding: 7px 11px;
     color: var(--gris);
-    font-size: 8px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 1.5px;
 }
@@ -845,6 +845,11 @@ span {
         margin:0;
     }
 
+    .about-left .about-description {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
     .about-right {
         width: 100%;
         order:2;
@@ -880,7 +885,7 @@ span {
     }
 
     .skill-header {
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 5px;
     }
 
