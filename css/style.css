@@ -202,12 +202,11 @@ footer {
 }
 /* Style du titre principal */
 .project-header h1 {
-    margin: 0;
+    margin: 0 0 24px;
     font-family: 'DM Serif Display';
     font-size: clamp(4rem, 5vw, 6.2rem);
     font-weight: 400;
     line-height: 0.9;
-    letter-spacing: -0.06em;
     color: var(--noir);
 }
 
@@ -215,8 +214,12 @@ footer {
     margin: 18px 0 0;
     max-width: 680px;
     color: var(--noir);
-    font-size: 15px;
+    font-size: 28px;
     line-height: 1.7;
+}
+
+.project-detail .eyebrow {
+    font-size: 16px;
 }
 
 .project-visual {
@@ -264,7 +267,7 @@ footer {
 .project-info-item h2 {
     margin: 0 0 8px;
     color: var(--rose-flash);
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -273,7 +276,7 @@ footer {
 .project-info-item p {
     margin: 0;
     color: var(--noir);
-    font-size: 15px;
+    font-size: 23px;
     line-height: 1.6;
 }
 /* Démarche créative  du projet*/
@@ -301,7 +304,7 @@ footer {
     max-width: 500px;
     margin: 22px 0 0;
     color: var(--gris);
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.7;
 }
 /* Affiche les trois étapes sur trois colonnes*/
@@ -334,7 +337,7 @@ footer {
 .story-number {
     margin: 0 0 12px;
     color: var(--rose-flash);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -343,14 +346,14 @@ footer {
     margin: 0 0 12px;
     color: var(--noir);
     font-family: 'DM Serif Display';
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 400;
 }
 
 .project-story-item div > p:last-child {
     margin: 0;
     color: var(--gris);
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.7;
 }
 
@@ -411,9 +414,10 @@ h1 span::after {
     background: var(--rose-pale);
     transform: scaleX(0);
     transform-origin: left center;
+    /* Connexion à l'animation */
     animation: underline-reveal 0.8s ease forwards 0.5s;
 }
-
+/* Animation pour ligne sous le texte */
 @keyframes underline-reveal {
     to {
         transform: scaleX(1);
@@ -624,9 +628,10 @@ span {
     height: 100%;
     width: 0;
     background: var(--rose-flash);
+    /* Connexion à l'animation skill-fill */
     animation: skill-fill 1.2s ease forwards;
 }
-
+/* Animation de remplissage */
 @keyframes skill-fill {
     from {
         width: 0;
@@ -966,8 +971,20 @@ span {
     }
 
     .project-intro {
-        font-size: 14px;
+        font-size: 17px;
         line-height: 1.6;
+    }
+
+    .project-detail .eyebrow {
+        font-size: 15px;
+    }
+
+    .project-info-item h2 {
+        font-size: 15px;
+    }
+
+    .project-info-item p {
+        font-size: 17px;
     }
 
     .project-visual {
@@ -986,6 +1003,10 @@ span {
     .project-story-header h2 {
         font-size: 2.8rem;
     }
+
+    .project-story-header > p:last-child {
+        font-size: 17px;
+    }
 /* Une colonne */
     .project-story-grid {
         grid-template-columns: 1fr;
@@ -995,5 +1016,13 @@ span {
     .project-story-item figure {
         height: auto;
         margin-bottom: 18px;
+    }
+
+    .project-story-item h3 {
+        font-size: 2rem;
+    }
+
+    .project-story-item div > p:last-child {
+        font-size: 16px;
     }
 }

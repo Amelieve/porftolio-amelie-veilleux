@@ -6,7 +6,7 @@ async function loadProjects() {
 }
 // Crée les différentes sections de la page du projet
 function createProjectCard(project) {
-    // Gé
+    
     return `
 
         <article class="project-card project-card--featured">

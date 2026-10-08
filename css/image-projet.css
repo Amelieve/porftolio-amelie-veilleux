@@ -91,10 +91,6 @@
     text-transform: uppercase;
 }
 
-@keyframes reveal {
-  from { opacity: 0; transform: translateY(60px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
 
 /* Titre + description */
 .project-card h1,
@@ -104,14 +100,19 @@
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     line-height: 0.95;
+    /* Connexion à l'animation reveal */
     animation: reveal linear both;
+    /* Animation se réalise au scroll */
     animation-timeline: scroll();
 }
-
+/* Animation de révélation */
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(60px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
 .project-card h1 {
     font-size: clamp(3rem, 5vw, 5.2rem);
-    letter-spacing: -0.04em;
 }
 
 .project-card h2 {

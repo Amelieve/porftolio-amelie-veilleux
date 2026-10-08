@@ -8,7 +8,8 @@
         "image": "assets/media/village_gallactique_mod.avif",
         "bouton": "01_projet.html",
         "software": ["Maya", "Unity"],
-        "projectType": "Projet scolaire"
+        "projectType": "Projet scolaire",
+        "intro":"Réaliser la modélisation d’un environnement dans le thème de l’espace en équipe. Il faut avoir une créer un univers cohérent avec les autres personnes de l'équipe."
     },
     {
         "title": "Mysto",
@@ -43,7 +44,8 @@
         "image": "assets/media/affiche_sport_mod.avif",
         "detailImageSize": "small",
         "software": ["Figma"],
-        "projectType": "Projet personnel"
+        "projectType": "Projet personnel",
+        "intro":"Réaliser une affiche coloré et rétro pour un joueur de hockey."
     },
         {
         "title": "Affiche pour un évènement local ",
@@ -61,7 +63,7 @@
         "etape01": "Version téléphone",
         "etape02": "Version instagram",
         "etape03": "Version Le Devoir",
-        "intro": "Réaliser une publicité pour un évènement local. Elle doit être adaptée à plusieurs formats d’affichage..",
+        "intro": "Réaliser une publicité pour un évènement local. Elle doit être adaptée à plusieurs formats d’affichage.",
         "image_creation01": "assets/media/affiche_telephone.png",
         "image_creation02": "assets/media/affiche_insta.png",
         "image_creation03": "assets/media/affiche_devoir.png",
