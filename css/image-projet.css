@@ -4,12 +4,13 @@
 }
 /* Organise en deux colonnes */
 .projects-grid {
-    max-width: 1180px;
+    max-width: 1000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    gap: 28px;
+    column-gap: 48px;
+    row-gap: 80px;
 }
 /* Style pour chaque carte de projet */
 .project-card {
@@ -26,7 +27,7 @@
 
 .project-visual {
     position: relative;
-    height: 520px;
+    height: 420px;
     overflow: hidden;
     border-radius: 28px 28px 0 0;
     background-color:var(--visual);
@@ -89,6 +90,12 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(60px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 /* Titre + description */
 .project-card h1,
 .project-card h2 {
@@ -97,7 +104,10 @@
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     line-height: 0.95;
+    animation: reveal linear both;
+    animation-timeline: scroll();
 }
+
 
 .project-card h1 {
     font-size: clamp(3rem, 5vw, 5.2rem);
@@ -166,6 +176,7 @@
     .projects-page {
         padding: 45px 15px 60px;
     }
+
 /* Une colonne */
     .projects-grid {
         grid-template-columns: 1fr;
@@ -242,5 +253,11 @@
 
     .project-link span {
         font-size: 0.7rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-content {
+        animation: none;
     }
 }

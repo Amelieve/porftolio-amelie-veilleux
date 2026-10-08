@@ -502,6 +502,18 @@ span {
     row-gap: 15px;
 }
 
+.contact a {
+    display: contents;
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
 .info-item span {
     display: block;
     color: var(--rose-flash);

@@ -60,5 +60,6 @@ async function init() {
         .map(project => createProjectCard(project))
         .join('');
 }
+
 // Lance le programme
 init();
