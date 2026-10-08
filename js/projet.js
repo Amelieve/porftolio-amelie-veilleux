@@ -87,12 +87,22 @@ function createProjectPage(project) {
             </p>
         </section>
 
-        <figure class="project-visual">
-            <img
-                class="project-image"
-                src="${project.image}"
-                alt="Image du projet ${project.name}"
-            >
+        <figure class="project-visual${project.detailImageSize === 'small' ? ' project-visual--small' : ''}">
+            ${project.youtube
+                ? `<iframe
+                    class="project-video"
+                    src="${project.youtube}"
+                    title="Vidéo du projet ${project.name}"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>`
+                : `<img
+                    class="project-image"
+                    src="${project.image}"
+                    alt="Image du projet ${project.name}"
+                >`
+            }
         </figure>
 
         <section class="project-info" aria-label="Informations sur le projet">

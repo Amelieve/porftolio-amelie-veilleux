@@ -230,12 +230,23 @@ footer {
     box-shadow: none;
 }
 
+.project-visual--small {
+    width: min(100%, 520px);
+}
+
 .project-image {
     display: block;
     width: 100%;
     height: auto;
     object-fit: initial;
     object-position: center;
+}
+
+.project-video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
 }
 /* Style pour les informations du projet */
 .project-info {

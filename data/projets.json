@@ -21,6 +21,7 @@
         "description": "Projet stop motion dans un style cartoon.",
          "intro": "Notre projet combine de la musique entraînante, des scènes énergiques et des lumières colorées pour rendre hommage aux génériques rétro avec lesquels nous avons grandi.",
         "image": "assets/media/mysto.png",
+        "youtube": "https://www.youtube.com/embed/YUlv121XUPY",
         "software": ["Dragon Frame", "DaVinci Resolve"],
         "projectType": "Projet scolaire",
         "etape01": "L'idée de départ",
@@ -40,6 +41,7 @@
         "year": 2026,
         "description": "Affiche réalisé pour un jouer de hockey.",
         "image": "assets/media/affiche_sport_mod.avif",
+        "detailImageSize": "small",
         "software": ["Figma"],
         "projectType": "Projet personnel"
     },
@@ -50,6 +52,7 @@
         "year": 2026,
         "description": "Affiche réalisé pour évènement local en plusieurs formats.",
         "image": "assets/media/affiche_local_mod.avif",
+        "detailImageSize": "small",
         "software": ["Figma"],
         "projectType": "Projet personnel",
         "title02": "AUTRES FORMATS",
