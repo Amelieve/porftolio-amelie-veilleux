@@ -513,6 +513,11 @@ span {
     row-gap: 15px;
 }
 
+.hero .contact {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
 .contact a {
     display: contents;
     color: inherit;
