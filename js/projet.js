@@ -32,10 +32,12 @@ function createProjectStory(project) {
             <div class="project-story-grid">
                 <article class="project-story-item">
                     <figure>
-                        <img
-                            src="${project.image_creation01}"
-                            alt="Image de la démarche créative de ${project.name} - étape 1"
-                        >
+                        <button class="image-zoom-trigger" type="button" aria-label="Agrandir l'image de la démarche créative - étape 1">
+                            <img
+                                src="${project.image_creation01}"
+                                alt="Image de la démarche créative de ${project.name} - étape 1"
+                            >
+                        </button>
                     </figure>
                     <div>
                         <p class="story-number">01</p>
@@ -46,10 +48,12 @@ function createProjectStory(project) {
 
                 <article class="project-story-item">
                     <figure>
-                        <img
-                            src="${project.image_creation02}"
-                            alt="${project.title04} ${project.name} - étape 2"
-                        >
+                        <button class="image-zoom-trigger" type="button" aria-label="Agrandir l'image de la démarche créative - étape 2">
+                            <img
+                                src="${project.image_creation02}"
+                                alt="${project.title04} ${project.name} - étape 2"
+                            >
+                        </button>
                     </figure>
                     <div>
                         <p class="story-number">02</p>
@@ -60,10 +64,12 @@ function createProjectStory(project) {
 
                 <article class="project-story-item">
                     <figure>
-                        <img
-                            src="${project.image_creation03}"
-                            alt="Image de la démarche créative de ${project.name} - étape 3"
-                        >
+                        <button class="image-zoom-trigger" type="button" aria-label="Agrandir l'image de la démarche créative - étape 3">
+                            <img
+                                src="${project.image_creation03}"
+                                alt="Image de la démarche créative de ${project.name} - étape 3"
+                            >
+                        </button>
                     </figure>
                     <div>
                         <p class="story-number">03</p>
@@ -94,14 +100,17 @@ function createProjectPage(project) {
                     src="${project.youtube}"
                     title="Vidéo du projet ${project.name}"
                     loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
                 ></iframe>`
-                : `<img
-                    class="project-image"
-                    src="${project.image}"
-                    alt="Image du projet ${project.name}"
-                >`
+                : `<button class="image-zoom-trigger" type="button" aria-label="Agrandir l'image du projet ${project.name}">
+                    <img
+                        class="project-image"
+                        src="${project.image}"
+                        alt="Image du projet ${project.name}"
+                    >
+                </button>`
             }
         </figure>
 
@@ -118,6 +127,36 @@ function createProjectPage(project) {
 
         ${createProjectStory(project)}
     `;
+}
+
+// Ajoute la fenêtre qui affiche les images en grand
+function initImageZoom() {
+    const lightbox = document.createElement('dialog');
+    lightbox.className = 'image-lightbox';
+    lightbox.innerHTML = `
+        <button class="image-lightbox-close" type="button" aria-label="Fermer l'image agrandie">×</button>
+        <img class="image-lightbox-content" alt="">
+    `;
+    document.body.append(lightbox);
+
+    const lightboxImage = lightbox.querySelector('.image-lightbox-content');
+    const closeButton = lightbox.querySelector('.image-lightbox-close');
+
+    document.querySelectorAll('.image-zoom-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            const image = trigger.querySelector('img');
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+            lightbox.showModal();
+        });
+    });
+
+    closeButton.addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('click', event => {
+        if (event.target === lightbox) {
+            lightbox.close();
+        }
+    });
 }
 
 // Fonction qui initalise la page du projet
@@ -138,6 +177,7 @@ async function init() {
     }
 // Génère et affiche la page du projet
     content.innerHTML = createProjectPage(project);
+    initImageZoom();
 }
 
 // Lance le programme

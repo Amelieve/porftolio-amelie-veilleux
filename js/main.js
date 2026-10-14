@@ -6,18 +6,25 @@ async function loadProjects() {
 }
 // Crée les différentes sections de la page du projet
 function createProjectCard(project) {
-    
+    const projectUrl = `01_projet.html?project=${encodeURIComponent(project.name || project.title)}`;
+
     return `
 
         <article class="project-card project-card--featured">
 
             <div class="project-visual project-visual--space">
 
-                <img
-                    src="${project.image}"
-                    alt="${project.title}"
-                    class="project-image"
+                <a
+                    href="${projectUrl}"
+                    class="project-image-link"
+                    aria-label="Voir le projet ${project.title}"
                 >
+                    <img
+                        src="${project.image}"
+                        alt="${project.title}"
+                        class="project-image"
+                    >
+                </a>
 
                 <span class="project-year">
                     ${project.year}
@@ -38,7 +45,7 @@ function createProjectCard(project) {
                 </p>
 
                 <a
-                    href="01_projet.html?project=${encodeURIComponent(project.name || project.title)}"
+                    href="${projectUrl}"
                     class="project-link"
                 >
                     Voir le projet <span>→</span>

@@ -109,7 +109,7 @@ main,
 .footer nav a {
     color: var(--gris);
     text-decoration: none;
-    font-size:21px;
+    font-size:15px;
     font-weight:600;
     letter-spacing:1.5px;
 }
@@ -204,7 +204,7 @@ footer {
 .project-header h1 {
     margin: 0 0 24px;
     font-family: 'DM Serif Display';
-    font-size: clamp(4rem, 5vw, 6.2rem);
+    font-size: clamp(3rem, 4vw, 5.2rem);
     font-weight: 400;
     line-height: 0.9;
     color: var(--noir);
@@ -214,7 +214,7 @@ footer {
     margin: 18px 0 0;
     max-width: 680px;
     color: var(--noir);
-    font-size: 28px;
+    font-size: 22px;
     line-height: 1.7;
 }
 
@@ -243,6 +243,53 @@ footer {
     height: auto;
     object-fit: initial;
     object-position: center;
+}
+
+.image-zoom-trigger {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: zoom-in;
+}
+
+.image-zoom-trigger:focus-visible {
+    outline: 3px solid var(--rose-flash);
+    outline-offset: 4px;
+}
+
+.image-lightbox {
+    width: min(92vw, 1200px);
+    max-width: none;
+    max-height: 92vh;
+    padding: 48px 24px 24px;
+    border: 0;
+    border-radius: 12px;
+    background: rgba(28, 28, 26, 0.96);
+}
+
+.image-lightbox::backdrop {
+    background: rgba(28, 28, 26, 0.82);
+}
+
+.image-lightbox-content {
+    display: block;
+    width: 100%;
+    max-height: calc(92vh - 72px);
+    object-fit: contain;
+}
+
+.image-lightbox-close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.2rem;
+    line-height: 1;
 }
 
 .project-video {
@@ -385,7 +432,7 @@ main {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 2px;
-    margin-bottom:27px;
+    margin-bottom:77px;
 }
 
 h1 {
@@ -393,6 +440,12 @@ h1 {
     font-size: 84px;
     font-weight: 400;
     letter-spacing: -2px;
+}
+
+.contact-page .hero h1 {
+    font-size: clamp(3.5rem, 6vw, 4.5rem);
+    line-height: 1;
+    margin: 0 0 24px;
 }
 /* Permet que certains mots du titre soient soulignés et rose */
 h1 span {
@@ -432,7 +485,7 @@ h1 span::after {
 
 .intro-contact {
     color: var(--noir);
-    font-size:46px;
+    font-size:26px;
 }
 /* Organisation des boutons */
 .buttons {
@@ -520,6 +573,27 @@ span {
 .hero .contact {
     font-size: 22px;
     line-height: 1.6;
+    grid-template-columns: 1fr;
+}
+
+.hero .contact-item {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    column-gap: 40px;
+    align-items: baseline;
+}
+
+.hero .contact-item span {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.hero .contact-item p {
+    margin: 0;
+}
+
+.hero .contact-item a {
+    display: block;
 }
 
 .contact a {
@@ -776,6 +850,11 @@ span {
         margin:0 0 20px;
     }
 
+    .contact-page .hero h1 {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+        letter-spacing: -1px;
+    }
+
     .intro {
         max-width:330px;
         font-size: 20px;
@@ -815,7 +894,12 @@ span {
         row-gap: 18px;
     }
 
-    .contact span {
+    .hero .contact-item {
+        grid-template-columns: 1fr;
+        row-gap: 2px;
+    }
+
+    .hero .contact-item span {
         font-size: 12px;
         font-weight: 600;
         letter-spacing: 1.5px;
