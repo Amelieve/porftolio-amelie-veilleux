@@ -1031,26 +1031,6 @@ span {
         font-size: 14px;
     }
 
-    @media (prefers-reduced-motion: no-preference) {
-        .software-item img {
-            animation: software-logo-slide-in linear both;
-            animation-timeline: view();
-            animation-range: entry 0% cover 40%;
-        }
-
-        .software-item:nth-child(2) img {
-            animation-range: entry 8% cover 48%;
-        }
-
-        .software-item:nth-child(3) img {
-            animation-range: entry 16% cover 56%;
-        }
-
-        .software-item:nth-child(4) img {
-            animation-range: entry 24% cover 64%;
-        }
-    }
-
     .section-label {
         color: var(--rose-flash);
         font-size: 12px;
