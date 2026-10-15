@@ -123,6 +123,10 @@ function createProjectPage(project) {
                 <h2>Type de projet</h2>
                 <p>${project.projectType}</p>
             </article>
+            <article class="project-info-item">
+                <h2>Rôle</h2>
+                <p>${project.role}</p>
+            </article>
         </section>
 
         ${createProjectStory(project)}

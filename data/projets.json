@@ -9,7 +9,8 @@
         "bouton": "01_projet.html",
         "software": ["Maya", "Unity"],
         "projectType": "Projet scolaire",
-        "intro":"Réaliser la modélisation d’un environnement dans le thème de l’espace en équipe. Il faut avoir une créer un univers cohérent avec les autres personnes de l'équipe."
+        "role": "Modélisatrice 3D de ma partie",
+        "intro":"Réaliser la modélisation d’un environnement dans le thème de l’espace en équipe. Il faut créer un univers cohérent avec les autres personnes de l'équipe."
     },
     {
         "title": "Mysto",
@@ -25,6 +26,7 @@
         "youtube": "https://www.youtube.com/embed/YUlv121XUPY",
         "software": ["Dragon Frame", "DaVinci Resolve"],
         "projectType": "Projet scolaire",
+        "role": "Direction artsique et montage sonore",
         "etape01": "L'idée de départ",
         "etape02": "Deuxième moodboard",
         "etape03": "En tournage",
@@ -32,31 +34,33 @@
         "image_creation02": "assets/media/02_moodboard.png",
         "image_creation03": "assets/media/tournage.jpg",
         "description01": "Nous avons commencé par créer un moodboard pour définir l'ambiance et le style visuel de notre projet. Nous avons rassemblé des images, des couleurs et des textures qui nous inspiraient.",
-        "description02": ": Avec les commentaires de la professeure, nous avons apporté des changements à notre pré production. Nous avons principalement changé le lieu mais nous gardons toujours le principe d’une histoire. ",
-        "description03": "En tournant, nous avons fait des tests avec les lumières et nous avons décidé d’aller vers un style plus coloré surtout avec les costumes. Nous avons aussi décidé d’aller vers un style plus d’une introduction d’un dessin animé. "
+        "description02": "Avec les commentaires de la professeure, nous avons apporté des changements à notre pré production. Nous avons principalement changé le lieu mais nous gardons toujours le principe d’une histoire. ",
+        "description03": "Pendant le tournage, nous avons fait des tests avec les lumières et nous avons décidé d’aller vers un style plus coloré surtout avec les costumes. Nous avons aussi décidé d’aller vers un style plus d’une introduction d’un dessin animé. "
     },
         {
         "title": "Affiche de sport",
         "name": "Affiche de sport",
         "category": ["Design", "Affiche"],
         "year": 2026,
-        "description": "Affiche réalisé pour un jouer de hockey.",
+        "description": "Affiche réalisé pour un joueur de hockey.",
         "image": "assets/media/affiche_sport_mod.avif",
         "detailImageSize": "small",
         "software": ["Figma"],
         "projectType": "Projet personnel",
-        "intro":"Réaliser une affiche coloré et rétro pour un joueur de hockey."
+        "role": "Création complète",
+        "intro":"Réaliser une affiche colorée et rétro pour un joueur de hockey."
     },
         {
         "title": "Affiche pour un évènement local ",
         "name": "Affiche pour un évènement local",
         "category": ["Design", "Affiche"],
         "year": 2026,
-        "description": "Affiche réalisé pour évènement local en plusieurs formats.",
+        "description": "Affiche réalisée pour évènement local en plusieurs formats.",
         "image": "assets/media/affiche_local_mod.avif",
         "detailImageSize": "small",
         "software": ["Figma"],
         "projectType": "Projet personnel",
+        "role": "Création complète",
         "title02": "AUTRES FORMATS",
         "title03": "Mise en page de l'affiche pour différents formats d'affichage.",
         "title04": "Autres formats pour",
